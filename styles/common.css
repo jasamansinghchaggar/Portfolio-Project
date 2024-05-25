@@ -1,0 +1,16 @@
+:root {
+    --dark-nav-bg-color: #000;
+    --bg-color: #000;
+    --nav-text-color: #fff;
+    --side_menu-bg-color: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}

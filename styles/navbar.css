@@ -1,0 +1,130 @@
+.navbar {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--dark-nav-bg-color);
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(247, 247, 247, 0.3);
+
+    .logo {
+        height: 49px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 0.5rem;
+
+        .list {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            li {
+                list-style: none;
+                padding: 0 0.5rem;
+
+                a {
+                    text-decoration: none;
+                    color: var(--nav-text-color);
+                    transition: 0.5s;
+
+                    &:hover {
+                        text-decoration: underline var(--nav-text-color) 1px;
+                    }
+                }
+            }
+        }
+
+        .mode {
+            background-color: inherit;
+            color: var(--nav-text-color);
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 0.2rem;
+            text-transform: uppercase;
+            font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+            text-transform: uppercase;
+            font-size: small;
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: underline var(--nav-text-color) 1px;
+            }
+
+        }
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        .menu {
+            flex-direction: row-reverse;
+
+            .list {
+                display: none;
+                flex-direction: column;
+            }
+
+            .list.active {
+                display: flex;
+                position: fixed;
+                top: 60px;
+                right: 0.5rem;
+                width: 150px;
+                border-radius: 5px;
+                background-color: var(--side_menu-bg-color);
+                flex-direction: column;
+                z-index: 1000;
+
+                li {
+                    padding: 10px;
+                    align-items: start;
+
+
+                    a {
+                        color: var(--nav-text-color);
+                        transition: 0.5s;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .toggle {
+            display: block;
+            height: 40px;
+            width: 50px;
+            margin: 5px 5px;
+            color: var(--nav-text-color);
+            background-color: var(--dark-nav-bg-color);
+            border: none;
+            cursor: pointer;
+
+            i {
+                font-size: 2rem;
+            }
+        }
+    }
+}
