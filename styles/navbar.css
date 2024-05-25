@@ -1,3 +1,11 @@
+:root {
+    /* for navigation bar */
+    --dark-nav-bg-color: #000;
+    --bg-color: #000;
+    --nav-text-color: #fff;
+    --side_menu-bg-color: #212529;
+}
+
 .navbar {
     display: flex;
     height: 50px;
