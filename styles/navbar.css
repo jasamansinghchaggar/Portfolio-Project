@@ -1,10 +1,3 @@
-:root {
-    /* for navigation bar */
-    --dark-nav-bg-color: #000;
-    --bg-color: #000;
-    --nav-text-color: #fff;
-    --side_menu-bg-color: #212529;
-}
 
 .navbar {
     display: flex;
@@ -14,12 +7,11 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: var(--dark-nav-bg-color);
     font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
     text-transform: uppercase;
     font-size: small;
     font-weight: 500;
-    border-bottom: 1px solid rgba(247, 247, 247, 0.3);
+    border-bottom: 1px solid var(--line);
 
     .logo {
         height: 49px;
@@ -47,11 +39,10 @@
 
                 a {
                     text-decoration: none;
-                    color: var(--nav-text-color);
-                    transition: 0.5s;
+                    color: var(--text-color);
 
                     &:hover {
-                        text-decoration: underline var(--nav-text-color) 1px;
+                        text-decoration: underline var(--text-color) 1px;
                     }
                 }
             }
@@ -59,7 +50,7 @@
 
         .mode {
             background-color: inherit;
-            color: var(--nav-text-color);
+            color: var(--text-color);
             border: none;
             cursor: pointer;
             padding: 0.5rem;
@@ -73,7 +64,7 @@
             font-weight: 500;
 
             &:hover {
-                text-decoration: underline var(--nav-text-color) 1px;
+                text-decoration: underline var(--text-color) 1px;
             }
 
         }
@@ -112,7 +103,7 @@
 
 
                     a {
-                        color: var(--nav-text-color);
+                        color: var(--text-color);
                         transition: 0.5s;
                         text-decoration: none;
                     }
@@ -125,13 +116,13 @@
             height: 40px;
             width: 50px;
             margin: 5px 5px;
-            color: var(--nav-text-color);
-            background-color: var(--dark-nav-bg-color);
+            background-color: transparent; 
             border: none;
             cursor: pointer;
 
             i {
                 font-size: 2rem;
+                color: var(--text-color);
             }
         }
     }

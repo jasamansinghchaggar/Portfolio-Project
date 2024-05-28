@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
 
-:root {
-    --intro-text-color: #fff;
-    --bottom-line: 1px solid #f7f7f74d;
-}
-
 html,
 body {
     margin: 0;
@@ -22,7 +17,6 @@ body {
     justify-content: center;
     padding-left: 30px;
     font-family: "Oswald", sans-serif;
-    color: var(--intro-text-color);
     overflow: hidden;
 }
 
@@ -44,49 +38,6 @@ body {
     overflow: hidden;
 }
 
-
-/* .blur-circle1 {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 400px;
-    right: -200px; 
-    border-radius: 50%;
-    background: radial-gradient(circle, #cecdcd, #cecdcdd5);
-    filter: blur(20px);
-    animation: moveCircle1 3s infinite alternate;
-}
-
-.blur-circle2 {
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    top: 300px;
-    right: -200px; 
-    border-radius: 50%;
-    background: radial-gradient(circle, #cecdcd, #cecdcdd5);
-    filter: blur(20px);
-    animation: moveCircle2 4s infinite alternate;
-}
-
-@keyframes moveCircle1 {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100px);
-    }
-}
-
-@keyframes moveCircle2 {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-150px);
-    }
-} */
-
 .blur-circle1 {
     position: absolute;
     width: 500px;
@@ -94,7 +45,7 @@ body {
     top: 400px;
     right: -200px; 
     border-radius: 50%;
-    background: radial-gradient(circle, #cecdcd, #cecdcdd5);
+    background: radial-gradient(circle, var(--gradient1), var(--gradient2));
     filter: blur(20px);
     animation: moveAndPulseCircle1 5s infinite alternate;
 }
@@ -106,7 +57,7 @@ body {
     top: 300px;
     right: -200px; 
     border-radius: 50%;
-    background: radial-gradient(circle, #cecdcd, #cecdcdd5);
+    background: radial-gradient(circle, var(--gradient1), var(--gradient2));
     filter: blur(20px);
     animation: moveAndPulseCircle2 3s infinite alternate;
 }

@@ -1,22 +1,45 @@
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+  --line: #f7f7f74d;
+}
+
+.dark-theme {
+  --bg-color: #000;
+  --text-color: #fff;
+  --side_menu-bg-color: #212529;
+  --gradient1: #cecdcd;
+  --gradient2: #cecdcdd5;
+  --line: #f7f7f74d;
+}
+
+.light-theme{
+  --bg-color: #fff;
+  --text-color: #000;
+  --side_menu-bg-color: #e7e7e7;
+  --gradient1: #070707;
+  --gradient2: #0f0f0fbd;
+  --line: #8f8f8f4d;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
   }
-  
-  @keyframes fadeIn {
-    100% {
-      opacity: 1;
-    }
-  }
-  
+}
