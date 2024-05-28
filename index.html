@@ -21,39 +21,52 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="logo/logo-dark.webp" alt="logo-dark">
-            </a>
-        </div>
-        <div class="menu">
-            <div class="list">
-                <li><a href="#">about</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">achievements</a></li>
-                <li><a href="#">contact</a></li>
+    <div class="wrapper fade-in">
+
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo/logo-dark.webp" alt="logo-dark">
+                </a>
             </div>
-            <button type="button" class="mode">
-                <i class="bi bi-moon"></i>
-                <!-- <i class="bi bi-sun"></i> -->
-                mode
+            <div class="menu">
+                <div class="list">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">achievements</a></li>
+                    <li><a href="#">contact</a></li>
+                </div>
+                <button type="button" class="mode">
+                    <i class="bi bi-moon"></i>
+                    <!-- <i class="bi bi-sun"></i> -->
+                    mode
+                </button>
+            </div>
+            <button id="toggleButton" class="toggle" type="button">
+                <i class="bi bi-list"></i>
             </button>
-        </div>
-        <button id="toggleButton" class="toggle" type="button">
-            <i class="bi bi-list"></i>
-        </button>
-    </nav>
+        </nav>
 
-    <main class="intro">
-        <h1>jasaman singh</h1>
-        <h1>web developer</h1>
-    </main>
+        <!-- intro section -->
+        <main class="intro">
+            <h1>jasaman singh</h1>
+            <div class="type-element">
+                <span id="element"></span>
+            </div>
+        </main>
 
+        <!-- blur circle  -->
+        <div class="blur-circle1"></div>
+        <div class="blur-circle2"></div>
+    </div>
     <!-- <footer>
         <p>&copy; 2024 All rights reserved.</p>
     </footer> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/fade.js"></script>
+    <script src="scripts/type.js"></script>
 </body>
 
 </html>

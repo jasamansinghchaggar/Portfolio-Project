@@ -1,43 +1,196 @@
-@import url(https://db.onlinewebfonts.com/c/d222627a38820e4c75870ad659a9d680?family=Title+Medium);
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
 
 :root {
-    /* for intro */
     --intro-text-color: #fff;
     --bottom-line: 1px solid #f7f7f74d;
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .intro {
-    height: calc(100vh - 50px);
+    height: 100vh;
     width: 100%;
-    /* padding-top: 55px; */
+    padding-top: 49px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-family: "Title Medium";
+    padding-left: 30px;
+    font-family: "Oswald", sans-serif;
     color: var(--intro-text-color);
+    overflow: hidden;
+}
 
-    h1 {
-        font-size: 12rem;
-        font-weight: 500;
-        text-transform: uppercase;
+.intro h1 {
+    font-size: 11rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 0px #616161bb;
+}
+
+.intro span {
+    font-size: 10rem;
+    font-weight: 300;
+    text-shadow: 5px 5px 0px #616161bb;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* .blur-circle1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 400px;
+    right: -200px; 
+    border-radius: 50%;
+    background: radial-gradient(circle, #cecdcd, #cecdcdd5);
+    filter: blur(20px);
+    animation: moveCircle1 3s infinite alternate;
+}
+
+.blur-circle2 {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 300px;
+    right: -200px; 
+    border-radius: 50%;
+    background: radial-gradient(circle, #cecdcd, #cecdcdd5);
+    filter: blur(20px);
+    animation: moveCircle2 4s infinite alternate;
+}
+
+@keyframes moveCircle1 {
+    0% {
+        transform: translateX(0);
     }
-
-    h1:nth-child(2) {
-        font-size: 10rem;
-        font-weight: 100;
+    100% {
+        transform: translateX(-100px);
     }
 }
 
+@keyframes moveCircle2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-150px);
+    }
+} */
+
+.blur-circle1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 400px;
+    right: -200px; 
+    border-radius: 50%;
+    background: radial-gradient(circle, #cecdcd, #cecdcdd5);
+    filter: blur(20px);
+    animation: moveAndPulseCircle1 5s infinite alternate;
+}
+
+.blur-circle2 {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 300px;
+    right: -200px; 
+    border-radius: 50%;
+    background: radial-gradient(circle, #cecdcd, #cecdcdd5);
+    filter: blur(20px);
+    animation: moveAndPulseCircle2 3s infinite alternate;
+}
+
+@keyframes moveAndPulseCircle1 {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    50% {
+        transform: translateX(-50px) scale(1.1);
+    }
+    100% {
+        transform: translateX(-100px) scale(1);
+    }
+}
+
+@keyframes moveAndPulseCircle2 {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    50% {
+        transform: translateX(-75px) scale(1.2);
+    }
+    100% {
+        transform: translateX(-150px) scale(1);
+    }
+}
+
+
 @media (max-width: 768px) {
     .intro {
-        h1 {
-            font-size: 6rem;
-        }
+        overflow: hidden;
+        justify-content: flex-start; 
+        padding-top: 100px; 
+        padding-left: 20px;
+    }
 
-        h1:nth-child(2) {
-            font-size: 5rem;
+    .intro h1 {
+        font-size: 4rem;
+        text-shadow: 3px 3px 0px #616161bb;
+    }
+
+    .intro span {
+        font-size: 3rem;
+        text-shadow: 3px 3px 0px #616161bb;
+    }
+
+    .blur-circle1 {
+        width: 300px;
+        height: 300px;
+        top: 500px;
+        right: -100px;
+        animation: moveAndPulseCircle1Mobile 5s infinite alternate;
+    }
+
+    .blur-circle2 {
+        width: 225px;
+        height: 225px;
+        top: 400px;
+        right: -100px;
+        animation: moveAndPulseCircle2Mobile 5s infinite alternate;
+    }
+
+    @keyframes moveAndPulseCircle1Mobile {
+        0% {
+            transform: translateX(0) scale(1);
+        }
+        50% {
+            transform: translateX(-25px) scale(1.1);
+        }
+        100% {
+            transform: translateX(-50px) scale(1);
+        }
+    }
+
+    @keyframes moveAndPulseCircle2Mobile {
+        0% {
+            transform: translateX(0) scale(1);
+        }
+        50% {
+            transform: translateX(-37.5px) scale(1.2);
+        }
+        100% {
+            transform: translateX(-75px) scale(1);
         }
     }
 }
