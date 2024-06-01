@@ -20,20 +20,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     body.classList.add('dark-theme');
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const themeToggleBtn = document.querySelector('.mode');
-    const body = document.body;
-    const logoImage = document.querySelector('.logo img');
-
-    themeToggleBtn.addEventListener('click', function () {
-        // Change the logo image based on the current theme
-        if (body.classList.contains('light-theme')) {
-            logoImage.src = 'logo/logo-light.webp';
-            logoImage.alt = 'logo-light';
-        } else {
-            logoImage.src = 'logo/logo-dark.webp';
-            logoImage.alt = 'logo-dark';
-        }
-    });
-});
