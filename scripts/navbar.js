@@ -5,4 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleButton.addEventListener('click', function () {
         list.classList.toggle('active');
     });
+    document.addEventListener('click', function (event) {
+        if (!toggleButton.contains(event.target) && !list.contains(event.target)) {
+            list.classList.remove('active');
+        }
+    });
 });
