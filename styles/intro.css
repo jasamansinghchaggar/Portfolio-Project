@@ -47,7 +47,7 @@ body {
     border-radius: 50%;
     background: radial-gradient(circle, var(--gradient1), var(--gradient2));
     filter: blur(20px);
-    animation: moveAndPulseCircle1 5s infinite alternate;
+    animation: moveAndPulseCircle1 3.5s infinite alternate;
 }
 
 .blur-circle2 {
@@ -59,7 +59,7 @@ body {
     border-radius: 50%;
     background: radial-gradient(circle, var(--gradient1), var(--gradient2));
     filter: blur(20px);
-    animation: moveAndPulseCircle2 3s infinite alternate;
+    animation: moveAndPulseCircle2 2.5s infinite alternate;
 }
 
 @keyframes moveAndPulseCircle1 {
@@ -110,7 +110,7 @@ body {
         height: 300px;
         top: 500px;
         right: -100px;
-        animation: moveAndPulseCircle1Mobile 5s infinite alternate;
+        animation: moveAndPulseCircle1Mobile 3.5s infinite alternate;
     }
 
     .blur-circle2 {
@@ -118,7 +118,7 @@ body {
         height: 225px;
         top: 400px;
         right: -100px;
-        animation: moveAndPulseCircle2Mobile 5s infinite alternate;
+        animation: moveAndPulseCircle2Mobile 2.5s infinite alternate;
     }
 
     @keyframes moveAndPulseCircle1Mobile {

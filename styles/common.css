@@ -5,6 +5,8 @@
 }
 
 .dark-theme {
+  --logo-bg-color: #fff;
+  --logo-text-color: #000;
   --bg-color: #000;
   --text-color: #fff;
   --side_menu-bg-color: #212529;
@@ -13,7 +15,9 @@
   --line: #f7f7f74d;
 }
 
-.light-theme{
+.light-theme {
+  --logo-bg-color: #000;
+  --logo-text-color: #fff;
   --bg-color: #fff;
   --text-color: #000;
   --side_menu-bg-color: #e7e7e7;

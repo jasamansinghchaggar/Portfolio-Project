@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.toggle('dark-theme');
         body.classList.toggle('light-theme');
         const icon = themeToggleBtn.querySelector('i');
-        if (body.classList.contains('dark-theme')) {
+        if (body.classList.contains('light-theme')) {
             icon.classList.remove('bi-moon');
             icon.classList.add('bi-sun');
         } else {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     themeToggleBtn.addEventListener('click', toggleTheme);
 
-    body.classList.add('light-theme');
+    body.classList.add('dark-theme');
 });
 
 document.addEventListener('DOMContentLoaded', function () {
