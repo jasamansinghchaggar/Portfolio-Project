@@ -65,7 +65,7 @@
                 img {
                     border-radius: 1px;
                     float: left;
-                    max-width: 200px; 
+                    max-width: 200px;
                     margin-right: 2rem;
                     margin-bottom: 1rem;
                 }
@@ -108,7 +108,7 @@
                 width: 20px;
                 text-align: center;
                 background-color: var(--bg-color);
-                
+
             }
         }
 
@@ -135,6 +135,4 @@
             background-size: 20px 30px;
         }
     }
-}
-
 }
