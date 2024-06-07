@@ -1,0 +1,130 @@
+.projects {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.projects-heading {
+    height: max-content;
+    width: 100%;
+}
+
+.projects-heading h1 {
+    font-family: 'NewTitle-Regular';
+    display: grid;
+    place-content: center;
+    border-bottom: 1px solid var(--line);
+    font-size: clamp(6rem, 40vw, 16rem);
+    font-weight: 550;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.est {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.est p {
+    padding: 15px;
+    border-bottom: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.projects-content {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+
+    .projects-text {
+        margin: auto;
+        text-align: center;
+        padding: 5rem;
+        width: 50vw;
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+
+    .projects-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        height: 350px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid var(--line);
+            border-bottom: none;
+            background-color: var(--bg-color);
+            height: 100%;
+
+            &:nth-child(2n) {
+                border-left: none;
+            }
+
+
+            .card-image {
+                width: 100%;
+                height: 100%;
+                border: 1px solid var(--line);
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 120ms ease-in-out;
+
+                    &:hover {
+                        transition: transform 120ms ease-in-out;
+                        transform: scale(0.9, 0.8);
+                    }
+                }
+            }
+
+            .card-text {
+                padding-top: 10px;
+
+
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: var(--text-color);
+
+                    &:hover {
+                        text-decoration: underline var(--text-color) 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .projects-content {
+        .projects-text {
+            text-align: start;
+            width: 80vw;
+            padding: 3rem 0.5rem;
+        }
+
+        .projects-cards {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            height: auto;
+
+            .card {
+                padding: 0.5rem;
+            }
+        }
+    }
+}
