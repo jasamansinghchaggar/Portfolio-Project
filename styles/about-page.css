@@ -1,5 +1,4 @@
 .about {
-    font-family: 'NewTitle-Regular';
     margin-top: 50px;
 
     .about-heading {
@@ -7,6 +6,7 @@
         width: 100%;
 
         h1 {
+            font-family: 'NewTitle-Regular';
             display: grid;
             place-content: center;
             border-bottom: 1px solid var(--line);
@@ -23,4 +23,118 @@
             }
         }
     }
+
+    .send-note {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            padding: 15px;
+            border-bottom: 1px solid var(--line);
+            border-left: 1px solid var(--line);
+            border-right: 1px solid var(--line);
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--text-color);
+
+            &:hover {
+                text-decoration: underline var(--text-color) 1px;
+            }
+        }
+    }
+
+    .about-content {
+        height: max-content;
+        width: 100%;
+
+        .bio {
+            margin: auto;
+            padding-top: 2rem;
+            width: 50vw;
+            font-size: 1.5rem;
+            font-weight: 100;
+
+            @media (max-width: 768px) {
+                width: 90vw;
+            }
+
+            .introduction {
+                position: relative;
+
+                img {
+                    border-radius: 1px;
+                    float: left;
+                    max-width: 200px; 
+                    margin-right: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        p {
+            padding: 10px 0;
+
+            a {
+                color: var(--text-color);
+                text-decoration: underline var(--text-color) 1px;
+                font-weight: 500;
+
+                &:hover {
+                    text-decoration: underline var(--text-color) 2px;
+                }
+            }
+        }
+    }
+
+    .quote {
+        display: flex;
+        height: 8rem;
+
+        .quote-line {
+            border: 1px solid var(--line);
+            width: 0px;
+            height: 100%;
+            position: relative;
+            margin: 1rem;
+
+            .quote-circle {
+                position: absolute;
+                top: 15px;
+                left: -10px;
+                border: 2px solid var(--line);
+                border-radius: 50%;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                background-color: var(--bg-color);
+                
+            }
+        }
+
+        .quote-text {
+            font-size: 1.3rem;
+            padding: 20px 0;
+            padding-left: 1rem;
+
+            .quote-name {
+                text-align: right;
+            }
+        }
+    }
+
+    .buy-me-coffee {
+        margin: 20px 0;
+
+        .coffee {
+            margin-left: 2px;
+            padding: 6px 0 6px 26px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-image: url(https://lynnandtonic.com/assets/images/coffee.svg);
+            background-size: 20px 30px;
+        }
+    }
+}
+
 }
