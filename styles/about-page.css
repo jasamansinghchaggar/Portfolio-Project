@@ -1,0 +1,26 @@
+.about {
+    font-family: 'NewTitle-Regular';
+    margin-top: 50px;
+
+    .about-heading {
+        height: max-content;
+        width: 100%;
+
+        h1 {
+            display: grid;
+            place-content: center;
+            border-bottom: 1px solid var(--line);
+            font-size: clamp(6rem, 40vw, 16rem);
+            font-weight: 550;
+            line-height: 1;
+            text-transform: uppercase;
+            text-align: center;
+            text-wrap: balance;
+
+            @media (max-width: 768px) {
+                font-size: 6rem;
+                top: -10px;
+            }
+        }
+    }
+}

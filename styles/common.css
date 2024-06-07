@@ -1,14 +1,23 @@
+@font-face {
+  font-family: 'NewTitle-Regular';
+  src: url('../fonts/NewTitle_Complete/Fonts/WEB/fonts/NewTitle-Regular.woff2') format('woff2'),
+       url('../fonts/NewTitle_Complete/Fonts/WEB/fonts/NewTitle-Regular.woff') format('woff'),
+       url('../fonts/NewTitle_Complete/Fonts/WEB/fonts/NewTitle-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 :root {
   --bg-color: #000;
-  --text-color: #fff;
-  --line: #f7f7f74d;
+  --text-color: #f7f7f7;
 }
 
 .dark-theme {
-  --logo-bg-color: #fff;
+  --logo-bg-color: #f7f7f7;
   --logo-text-color: #000;
   --bg-color: #000;
-  --text-color: #fff;
+  --text-color: #f7f7f7;
   --side_menu-bg-color: #212529;
   --gradient1: #cecdcd;
   --gradient2: #cecdcdd5;
@@ -17,13 +26,13 @@
 
 .light-theme {
   --logo-bg-color: #000;
-  --logo-text-color: #fff;
-  --bg-color: #fff;
+  --logo-text-color: #f7f7f7;
+  --bg-color: #f7f7f7;
   --text-color: #000;
   --side_menu-bg-color: #e7e7e7;
   --gradient1: #070707;
   --gradient2: #0f0f0fbd;
-  --line: #8f8f8f4d;
+  --line: #0c0c0c4d;
 }
 
 * {
