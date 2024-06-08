@@ -57,25 +57,124 @@
         <section class="achievements-content">
             <div class="achievements-text">
                 <p>
-                    Welcome to my Achievements page! Here, you'll find a showcase of my certifications and
-                    accomplishments. I've earned several certifications and am continually working towards expanding my
-                    skill set with more credentials.
+                    Welcome to my Achievements page! Here, you'll find a showcase of my <a href="#certificates" onclick="smoothScroll('certificates', event)">certifications</a> and accomplishments. I am continually working towards expanding my <a href="#skills" onclick="smoothScroll('skills', event)">skill</a> set with more credentials.
                 </p>
             </div>
+
+            <h2 id="certificates">Certifications</h2>
+
             <div class="achievements-cards">
                 <div class="card">
                     <div class="card-image">
-                        <a href="https://nptel.ac.in/noc/E_Certificate/NPTEL24CS42S55780182530525828" target="_blank"><img src="../images/Programming for Problem Solving in C.jpg" alt="Programming for Problem Solving in C"></a>
+                        <a href="https://nptel.ac.in/noc/E_Certificate/NPTEL24CS42S55780182530525828"
+                            target="_blank"><img src="../images/Programming for Problem Solving in C.jpg"
+                                alt="Programming for Problem Solving in C"></a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-image">
-                        <a href="https://www.coursera.org/account/accomplishments/records/C9AJZMY6G9YT" target="_blank"><img src="../images/Get Started with Figma.jpg" alt="Get Started with Figma"></a>
+                        <a href="https://www.coursera.org/account/accomplishments/records/C9AJZMY6G9YT"
+                            target="_blank"><img src="../images/Get Started with Figma.jpg"
+                                alt="Get Started with Figma"></a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-image">
-                        <a href="https://www.coursera.org/account/accomplishments/verify/39JEW2S69FSJ" target="_blank"><img src="../images/The Full Stack.jpg" alt="The Full Stack"></a>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/39JEW2S69FSJ"
+                            target="_blank"><img src="../images/The Full Stack.jpg" alt="The Full Stack"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills" id="skills">
+                <h2>Skills</h2>
+                <div class="all-skills">
+                    <div class="development">
+                        <h3>Development</h3>
+                        <div class="development-skills">
+                            <li class="html">
+                                <p>HTML</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                            <li class="css">
+                                <p>CSS</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                            <li class="js">
+                                <p>JavaScript</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                            <li class="nodejs">
+                                <p>Node.js</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                            <li class="reactjs">
+                                <p>React.js</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                            <li class="django">
+                                <p>Django</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                            <li class="mysql">
+                                <p>MySQL</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                            <li class="bootstrap">
+                                <p>Bootstrap</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="design">
+                        <h3>Design</h3>
+                        <div class="design-skills">
+                            <li class="figma">
+                                <p>Figma</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                            <li class="ai">
+                                <p>Adobe Illustrator</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="programming">
+                        <h3>Programming</h3>
+                        <div class="programming-skills">
+                            <li class="c">
+                                <p>C</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                            <li class="python">
+                                <p>Python</p>
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </li>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,6 +198,7 @@
 
     <script src="../scripts/navbar.js"></script>
     <script src="../scripts/theme.js"></script>
+    <script src="../scripts/smoothscroll.js"></script>
 </body>
 
 </html>

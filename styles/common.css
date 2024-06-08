@@ -22,6 +22,7 @@
   --gradient1: #cecdcd;
   --gradient2: #cecdcdd5;
   --line: #f7f7f74d;
+  --progress: #f7f7f7;
 }
 
 .light-theme {
@@ -33,6 +34,7 @@
   --gradient1: #070707;
   --gradient2: #0f0f0fbd;
   --line: #0c0c0c4d;
+  --progress: #000;
 }
 
 * {
@@ -63,6 +65,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
+  border-left: 1px solid var(--line);
   background: transparent;
 }
 

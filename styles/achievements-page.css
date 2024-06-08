@@ -42,6 +42,14 @@
     height: max-content;
     overflow: hidden;
 
+    h2 {
+        font-size: 4rem;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
     .achievements-text {
         margin: auto;
         text-align: center;
@@ -49,6 +57,11 @@
         width: 50vw;
         font-size: 1.2rem;
         font-weight: 200;
+
+        a {
+            color: var(--text-color);
+            font-weight: 500;
+        }
     }
 
     .achievements-cards {
@@ -96,6 +109,10 @@
     }
 
     .achievements-content {
+        h2 {
+            font-size: 2.5rem;
+        }
+
         .achievements-text {
             text-align: start;
             width: 80vw;
@@ -110,5 +127,167 @@
                 padding: 0.5rem;
             }
         }
+    }
+}
+
+/* skills */
+.skills {
+    height: max-content;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 2rem;
+
+    h3 {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    li {
+        list-style: none;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+
+        .progress-bar {
+            width: 100%;
+            height: 15px;
+            margin-top: 0.5rem;
+            border: 1px solid var(--line);
+            box-sizing: border-box;
+            padding: 2.5px;
+
+            .progress {
+                height: 100%;
+                background-color: var(--progress);
+            }
+        }
+    }
+
+    .all-skills {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        height: max-content;
+        overflow: hidden;
+
+        .development,
+        .design,
+        .programming {
+            width: 300px;
+            margin-bottom: 1rem;
+        }
+
+        .development-skills,
+        .design-skills {
+            width: 100%;
+        }
+
+        .development {
+            .html .progress {
+                width: 95%;
+            }
+
+            .css .progress {
+                width: 90%;
+            }
+
+            .js .progress {
+                width: 85%;
+            }
+
+            .nodejs .progress {
+                width: 95%;
+            }
+
+            .reactjs .progress {
+                width: 80%;
+            }
+
+            .django .progress {
+                width: 90%;
+            }
+
+            .mysql .progress {
+                width: 85%;
+            }
+
+            .bootstrap .progress {
+                width: 95%;
+            }
+        }
+
+        .design {
+            .figma .progress {
+                width: 95%;
+            }
+
+            .ai .progress {
+                width: 80%;
+            }
+        }
+
+        .programming {
+            .c .progress {
+                width: 95%;
+            }
+
+            .python .progress {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 1rem;
+    }
+
+    .skills h3 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .skills li {
+        font-size: 1rem;
+    }
+
+    .all-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .development,
+    .design,
+    .programming {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        padding: 0.5rem;
+    }
+
+    .skills h3 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .skills li {
+        font-size: 0.9rem;
+    }
+
+    .all-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .development,
+    .design,
+    .programming {
+        width: 100%;
     }
 }
