@@ -1,14 +1,15 @@
-.projects {
+.achievements {
     margin-top: 50px;
     width: 100%;
+    /* height: 200vh; */
 }
 
-.projects-heading {
+.achievements-heading {
     height: max-content;
     width: 100%;
 }
 
-.projects-heading h1 {
+.achievements-heading h1 {
     font-family: 'NewTitle-Regular';
     display: grid;
     place-content: center;
@@ -36,12 +37,12 @@
     color: var(--text-color);
 }
 
-.projects-content {
+.achievements-content {
     width: 100%;
     height: max-content;
     overflow: hidden;
 
-    .projects-text {
+    .achievements-text {
         margin: auto;
         text-align: center;
         padding: 5rem;
@@ -50,10 +51,10 @@
         font-weight: 200;
     }
 
-    .projects-cards {
+    .achievements-cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-        height: 350px;
+        height: 400px;
 
         .card {
             display: flex;
@@ -64,7 +65,7 @@
             border: 1px solid var(--line);
             background-color: var(--bg-color);
             height: 100%;
-            
+
             .card-image {
                 width: 100%;
                 height: 100%;
@@ -83,21 +84,6 @@
                     }
                 }
             }
-
-            .card-text {
-                padding-top: 10px;
-
-
-                a {
-                    text-decoration: none;
-                    font-weight: 500;
-                    color: var(--text-color);
-
-                    &:hover {
-                        text-decoration: underline var(--text-color) 1px;
-                    }
-                }
-            }
         }
     }
 }
@@ -105,18 +91,18 @@
 
 @media (max-width: 768px) {
 
-    .projects-heading h1 {
-        font-size: 10rem;
+    .achievements-heading h1 {
+        font-size: 7rem;
     }
 
-    .projects-content {
-        .projects-text {
+    .achievements-content {
+        .achievements-text {
             text-align: start;
             width: 80vw;
             padding: 3rem 0.5rem;
         }
 
-        .projects-cards {
+        .achievements-cards {
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             height: auto;
 
