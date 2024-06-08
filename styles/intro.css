@@ -23,13 +23,11 @@ body {
     font-size: 15rem;
     font-weight: 500;
     text-transform: uppercase;
-    text-shadow: 5px 5px 0px #616161bb;
 }
 
 .intro span {
     font-size: 10rem;
     font-weight: 300;
-    text-shadow: 5px 5px 0px #616161bb;
 }
 
 .wrapper {
@@ -96,12 +94,10 @@ body {
 
     .intro h1 {
         font-size: 6rem;
-        text-shadow: 3px 3px 0px #616161bb;
     }
 
     .intro span {
         font-size: 4rem;
-        text-shadow: 3px 3px 0px #616161bb;
     }
 
     .blur-circle1 {
