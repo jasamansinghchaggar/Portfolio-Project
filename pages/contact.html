@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
-    <title>Jasaman - Contact</title>
+    <title>Contact | Jasaman</title>
 
     <!-- browser icon -->
     <link rel="shortcut icon" href="../logo/favicon.webp" type="image/x-icon">
@@ -16,6 +16,8 @@
     <!-- styles -->
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/contact-page.css">
 </head>
 
 <body>
@@ -34,7 +36,6 @@
             </div>
             <button type="button" class="mode">
                 <i class="bi bi-moon"></i>
-                <!-- <i class="bi bi-sun"></i> -->
                 <p>mode</p>
             </button>
         </div>
@@ -43,7 +44,56 @@
         </button>
     </nav>
 
+    <!-- Contacts page -->
+    <main class="wrapper contacts">
+        <div class="contacts-heading">
+            <h1>contact</h1>
+        </div>
+        <span class="est">
+            <p>Est. 2024</p>
+        </span>
 
+        <section class="contact">
+            <div class="service-text">
+                <h1>Contact Me</h1>
+                <p>I can provide you with a wide range of services to meet your digital needs. Whether you're looking to build a robust web application, design intuitive user interfaces, or create an engaging online presence, I have the skills and expertise to help you achieve your goals. Let's work together to bring your vision to life.</p>
+            </div>
+            <div class="form-wrapper">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a8f70438-0739-4e98-8d80-ccb48a1b598c">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" maxlength="30" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" maxlength="20" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Mobile No.:</label>
+                        <input type="tel" id="phone" name="phone" maxlength="10">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" maxlength="150" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials-list">
+            <li><a href="mailto:jsc.21905@gmail.com" target="_blank">email</a></li>
+        </div>
+        <div class="socials-icon">
+            <a href="https://www.linkedin.com/in/jasaman-singh-chaggar-502479291/" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/jasamansinghchaggar/" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://instagram.com/jasamansinghchaggar/"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
 
     <script src="../scripts/navbar.js"></script>
     <script src="../scripts/theme.js"></script>

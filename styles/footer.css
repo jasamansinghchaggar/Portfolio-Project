@@ -1,5 +1,6 @@
 footer {
     height: 10vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +10,8 @@ footer {
     font-weight: 500;
     border-top: 1px solid var(--line);
     padding: 1.5rem;
+    position: relative;
+    bottom: 0;
 
 
     .socials-list {

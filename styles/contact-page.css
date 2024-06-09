@@ -1,0 +1,135 @@
+.contacts {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.contacts-heading {
+    height: max-content;
+    width: 100%;
+}
+
+.contacts-heading h1 {
+    font-family: 'NewTitle-Regular';
+    display: grid;
+    place-content: center;
+    border-bottom: 1px solid var(--line);
+    font-size: clamp(6rem, 40vw, 16rem);
+    font-weight: 550;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.est {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.est p {
+    padding: 15px;
+    border-bottom: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: max-content;
+    padding: 3rem;
+
+    .service-text {
+        width: 50%;
+
+        h1 {
+            padding: 1rem 0;
+            font-size: 3rem;
+        }
+
+        p {
+            line-height: 1.5rem;
+        }
+    }
+
+    .form-wrapper {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contact-form {
+    background-color: var(--bg-color);
+    border: 1px solid var(--line);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--line);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--text-color);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+button[type="submit"]:hover {
+    transform: translate(-7px, -7px);
+    box-shadow: 7px 7px 0px var(--line);
+}
+
+@media (max-width:768px) {
+
+    .contact {
+        flex-direction: column;
+        gap: 2rem;
+
+        .service-text {
+            width: 100%;
+        }
+
+        .form-wrapper {
+            width: 100%;
+        }
+    }
+}
