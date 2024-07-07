@@ -124,6 +124,10 @@ body {
         font-size: 4rem;
     }
 
+    .intro .scroll-btn {
+        margin: 20px 0px;
+    }
+
     .blur-circle1 {
         width: 300px;
         height: 300px;
