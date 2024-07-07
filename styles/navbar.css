@@ -44,8 +44,6 @@
             width: 100%;
             display: flex;
             align-items: center;
-            flex-direction: column;
-            /* Adjusted for small screens */
 
             li {
                 list-style: none;
@@ -61,14 +59,10 @@
                 }
             }
 
-            /* Smooth animation for display */
-            transition: max-height 0.5s ease-in-out;
-            max-height: 0;
-            overflow: hidden;
+
 
             &.active {
                 max-height: 300px;
-                /* Adjust based on content */
             }
         }
 
@@ -105,7 +99,6 @@
 
             .list {
                 display: flex;
-                /* Start hidden */
                 position: fixed;
                 top: 60px;
                 right: 0.5rem;
@@ -114,10 +107,12 @@
                 background-color: var(--side_menu-bg-color);
                 flex-direction: column;
                 z-index: 1000;
+                transition: max-height 0.5s ease-in-out;
+                max-height: 0;
+                overflow: hidden;
 
                 &.active {
                     max-height: 300px;
-                    /* Adjust based on content */
                 }
 
                 li {
