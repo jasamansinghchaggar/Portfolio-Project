@@ -1,11 +1,19 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.querySelector('.mode');
     const body = document.body;
 
     function toggleTheme() {
-        body.classList.toggle('dark-theme');
-        body.classList.toggle('light-theme');
+        if (body.classList.contains('dark-theme')) {
+            body.classList.replace('dark-theme', 'light-theme');
+            localStorage.setItem('theme', 'light-theme');
+        } else {
+            body.classList.replace('light-theme', 'dark-theme');
+            localStorage.setItem('theme', 'dark-theme');
+        }
+        updateIcon();
+    }
+
+    function updateIcon() {
         const icon = themeToggleBtn.querySelector('i');
         if (body.classList.contains('light-theme')) {
             icon.classList.remove('bi-moon');
@@ -16,7 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    themeToggleBtn.addEventListener('click', toggleTheme);
+    function applyStoredTheme() {
+        const storedTheme = localStorage.getItem('theme') || 'dark-theme';
+        body.classList.add(storedTheme);
+        updateIcon();
+    }
 
-    body.classList.add('dark-theme');
+    applyStoredTheme();
+
+    themeToggleBtn.addEventListener('click', toggleTheme);
 });

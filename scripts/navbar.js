@@ -1,13 +1,15 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var toggleButton = document.getElementById('toggleButton');
-    var list = document.querySelector('.list');
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.querySelector('.toggle');
+    const list = document.querySelector('.list');
+    const body = document.body;
 
-    toggleButton.addEventListener('click', function () {
-        list.classList.toggle('active');
-    });
-    document.addEventListener('click', function (event) {
-        if (!toggleButton.contains(event.target) && !list.contains(event.target)) {
+    toggleBtn.addEventListener('click', () => {
+        if (list.classList.contains('active')) {
             list.classList.remove('active');
+            list.classList.add('inactive');
+        } else {
+            list.classList.remove('inactive');
+            list.classList.add('active');
         }
     });
 });

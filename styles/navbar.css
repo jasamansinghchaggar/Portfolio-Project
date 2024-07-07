@@ -12,6 +12,7 @@
     border-bottom: 1px solid var(--line);
     z-index: 1000;
     background-color: var(--bg-color);
+    
     .logo {
         height: 49px;
         width: 3rem;

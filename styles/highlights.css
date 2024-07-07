@@ -1,0 +1,11 @@
+.highlights {
+    height: 100vh;
+    width: calc(100vw - 50px); 
+    margin: 20px;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51, 0.9);
+    border: none;
+    border-radius: 15px;
+    z-index: 2;
+    position: relative;
+}
