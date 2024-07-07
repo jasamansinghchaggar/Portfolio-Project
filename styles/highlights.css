@@ -1,13 +1,30 @@
 .highlights {
-    height: 100vh;
+    height: max-content;
     width: calc(100vw - 50px); 
     margin: 20px;
     overflow: hidden;
-    background-color: rgb(51, 51, 51, 0.9);
+    background-color: rgba(100, 100, 100, 0.7);
     border: none;
     border-radius: 15px;
     z-index: 2;
     position: relative;
+
+    h1 {
+        padding: 15px;
+    }
+
+    .line {
+        border: 1px solid var(--text-color);
+        margin: 0 15px;
+    }
+
+    .common-prev {
+        height: 150px;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 15px;
+    }
 }
 
 @media (max-width: 768px) {
