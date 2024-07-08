@@ -1,29 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 .highlights {
-    height: max-content;
-    width: calc(100vw - 50px); 
+    height: 75vh;
+    width: calc(100vw - 30px); 
     margin: 20px;
     overflow: hidden;
-    background-color: rgba(100, 100, 100, 0.7);
-    border: none;
-    border-radius: 15px;
     z-index: 2;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: system-ui;
+    background: linear-gradient(
+        to top right (var(--bg-color, transparent))
+    );
+}
+
+.slider{
+    position: relative;
+    width: 50%;
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.item{
+    position: absolute;
+    width: 300px;
+    height: 60vh;
+    text-align: justify;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: 39%;
+}
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    right: 470px;
+    z-index: 3;
+}
+#next{
+    left: unset;
+    right: 30px;
+}
+
+.highlight-heading {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
 
     h1 {
-        padding: 15px;
+        padding-bottom: 30px;
+        font-size: 50px;
+
+        span {
+            font-family: "Satisfy", cursive;
+            font-weight: 200;
+        }
     }
 
-    .line {
-        border: 1px solid var(--text-color);
-        margin: 0 15px;
-    }
-
-    .common-prev {
-        height: 150px;
-        width: 100%;
-        overflow: hidden;
-        box-sizing: border-box;
-        padding: 15px;
+    p {
+        width: 90%;
+        font-size: 20px;
     }
 }
 
