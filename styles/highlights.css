@@ -2,7 +2,7 @@
 
 .highlights {
     height: 75vh;
-    width: calc(100vw - 30px); 
+    width: calc(100vw - 30px);
     margin: 20px;
     overflow: hidden;
     z-index: 2;
@@ -11,12 +11,10 @@
     justify-content: space-between;
     align-items: center;
     font-family: system-ui;
-    background: linear-gradient(
-        to top right (var(--bg-color, transparent))
-    );
+    background: linear-gradient(to top right (var(--bg-color, transparent)));
 }
 
-.slider{
+.slider {
     position: relative;
     width: 50%;
     height: 75vh;
@@ -24,7 +22,8 @@
     display: flex;
     align-items: center;
 }
-.item{
+
+.item {
     position: absolute;
     width: 300px;
     height: 60vh;
@@ -35,8 +34,32 @@
     padding: 20px;
     transition: 0.5s;
     left: 39%;
+
+    p {
+        padding: 10px 0px;
+        font-size: 16px;
+    }
+
+    .btn {
+        margin: 20px 0px;
+
+        a {
+            text-decoration: none;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 10px;
+            border-radius: 8px;
+
+            &:hover {
+                text-decoration: underline var(--text-color) 1px;
+            }
+        }
+
+    }
 }
-#next, #prev{
+
+#next,
+#prev {
     position: absolute;
     top: 40%;
     color: var(--text-color);
@@ -48,7 +71,8 @@
     right: 470px;
     z-index: 3;
 }
-#next{
+
+#next {
     left: unset;
     right: 30px;
 }

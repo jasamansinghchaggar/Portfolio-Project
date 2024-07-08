@@ -60,7 +60,7 @@ body {
     right: -200px;
     border-radius: 50%;
     background: radial-gradient(circle, var(--gradient1), var(--gradient2));
-    filter: blur(20px);
+    filter: blur(40px);
     animation: moveAndPulseCircle1 5s infinite alternate;
     z-index: 1;
 }
@@ -73,7 +73,7 @@ body {
     right: -200px;
     border-radius: 50%;
     background: radial-gradient(circle, var(--gradient1), var(--gradient2));
-    filter: blur(20px);
+    filter: blur(40px);
     animation: moveAndPulseCircle2 4s infinite alternate;
     z-index: 1;
 }

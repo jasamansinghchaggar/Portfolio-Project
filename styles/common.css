@@ -19,8 +19,8 @@
   --bg-color: #000;
   --text-color: #f7f7f7;
   --side_menu-bg-color: #212529;
-  --gradient1: #cecdcd;
-  --gradient2: #cecdcdd5;
+  --gradient1: #cecdcd9c;
+  --gradient2: #cecdcd9c;
   --line: #f7f7f74d;
   --progress: #f7f7f7;
 }
@@ -31,8 +31,8 @@
   --bg-color: #f7f7f7;
   --text-color: #000;
   --side_menu-bg-color: #e7e7e7;
-  --gradient1: #070707;
-  --gradient2: #0f0f0fbd;
+  --gradient1: #0f0f0fc2;
+  --gradient2: #0f0f0fc2;
   --line: #0c0c0c4d;
   --progress: #000;
 }
