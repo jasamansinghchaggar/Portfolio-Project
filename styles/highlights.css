@@ -108,7 +108,7 @@
         flex-direction: column;
         margin: 0;
         box-sizing: border-box;
-        justify-content: space-evenly;
+        justify-content: unset;
     }
 
     .highlight-heading {
@@ -127,7 +127,7 @@
     }
 
     .slider {
-        height: 60%;
+        height: 80%;
         width: 100%;
     }
 
