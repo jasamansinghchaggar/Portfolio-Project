@@ -89,14 +89,12 @@
         padding-bottom: 30px;
         font-size: 50px;
 
-        /* span {
-            font-family: "Satisfy", cursive;
-            font-weight: 200;
-        } */
+        span {
+            color: var(--bg-color);
+        }
     }
 
     p {
-        font-family: "Satisfy", cursive;
         width: 90%;
         font-size: 25px;
     }
@@ -104,6 +102,38 @@
 
 @media (max-width: 768px) {
     .highlights {
-        width: calc(100vw - 40px);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        box-sizing: border-box;
+        justify-content: space-evenly;
+    }
+
+    .highlight-heading {
+        height: 20%;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .highlight-heading h1 {
+        font-size: 28px;
+    }
+
+    .highlight-heading p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .slider {
+        height: 60%;
+        width: 100%;
+    }
+
+    .item {
+        top: 15%;
+        height: 60%;
+        left: 8%;
     }
 }
