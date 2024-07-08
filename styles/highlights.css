@@ -89,15 +89,16 @@
         padding-bottom: 30px;
         font-size: 50px;
 
-        span {
+        /* span {
             font-family: "Satisfy", cursive;
             font-weight: 200;
-        }
+        } */
     }
 
     p {
+        font-family: "Satisfy", cursive;
         width: 90%;
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
