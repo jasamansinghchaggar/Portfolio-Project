@@ -1,3 +1,11 @@
+.navbar {
+    .logo {
+        a {
+            font-weight: 900;
+        }
+    }
+}
+
 html,
 body {
     margin: 0;

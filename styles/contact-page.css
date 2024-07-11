@@ -1,3 +1,15 @@
+.navbar {
+    .menu {
+        .list {
+            li:nth-child(4) {
+                a {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+
 .contacts {
     margin-top: 50px;
     width: 100%;
