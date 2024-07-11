@@ -67,7 +67,7 @@
     .achievements-cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-        height: 400px;
+        height: max-content;
 
         .card {
             display: flex;
