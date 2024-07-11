@@ -76,17 +76,11 @@
                     height: 100%;
                     object-fit: cover;
                     transition: transform 120ms ease-in-out;
-
-                    &:hover {
-                        transition: transform 120ms ease-in-out;
-                        transform: scale(0.9, 0.8);
-                    }
                 }
             }
 
             .card-text {
                 padding-top: 10px;
-
 
                 a {
                     text-decoration: none;
