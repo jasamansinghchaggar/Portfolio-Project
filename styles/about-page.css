@@ -93,12 +93,11 @@
 
 .quote {
     display: flex;
-    height: 8rem;
+    height: 150px;
 }
 
 .quote .quote-line {
-    border: 1px solid var(--line);
-    width: 0px;
+    border-left: 1px solid var(--line);
     height: 100%;
     position: relative;
     margin: 1rem;
@@ -114,6 +113,7 @@
     width: 20px;
     text-align: center;
     background-color: var(--bg-color);
+    line-height: 25px;
 }
 
 .quote .quote-text {
@@ -126,7 +126,6 @@
 .quote .quote-text .quote-name {
     text-align: right;
 }
-
 
 .buy-me-coffee {
     margin: 20px 0;
@@ -205,3 +204,115 @@
     }
 }
 
+.reviews {
+    width: 50%;
+    height: max-content;
+    margin: auto;
+    overflow: hidden;
+
+    h2 {
+        width: 100%;
+        font-weight: 500;
+        color: var(--text-color);
+        padding-bottom: 20px;
+    }
+
+    .reviews-roller {
+        overflow: auto;
+        display: flex;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .review {
+            background-color: var(--line);
+            border-radius: 10px;
+            height: 100%;
+            width: 60%;
+            padding: 20px;
+            margin: 20px 10px;
+            flex: 0 0 auto;
+            animation-name: roll;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+
+            .reviewer-info {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                .avatar {
+                    font-size: 2rem;
+                }
+
+                .name {
+                    font-size: 1.25rem;
+                }
+            }
+
+            .review-message {
+                font-size: 1.2rem;
+                text-wrap: wrap;
+
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@keyframes roll {
+    from {
+        transform: translateX(0);
+
+    }
+
+    to {
+        transform: translateX(-105%);
+    }
+}
+
+@media (max-width:768px) {
+
+    .reviews {
+        width: 100%;
+
+        h2 {
+            padding-top: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .review {
+            .reviewer-info {
+                .avatar {
+                    font-size: 1.5rem !important;
+                }
+
+                .name {
+                    font-size: 1rem !important;
+                }
+            }
+
+            .review-message {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    @keyframes roll {
+        from {
+            transform: translateX(0);
+
+        }
+
+        to {
+            transform: translateX(-108%);
+        }
+    }
+}
