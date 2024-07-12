@@ -8,11 +8,6 @@
   font-style: normal;
 }
 
-:root {
-  --bg-color: #000;
-  --text-color: #f7f7f7;
-}
-
 .dark-theme {
   --logo-bg-color: #f7f7f7;
   --logo-text-color: #000;
