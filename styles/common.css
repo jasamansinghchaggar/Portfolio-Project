@@ -8,17 +8,6 @@
   font-style: normal;
 }
 
-:root {
-  --color1: #83e5b6;
-  --color2: #3ec9ac;
-  --color3: #4e91a4;
-  --color4: #28343a;
-  --color5: #003c44;
-  --color6: #135d66;
-  --color7: #77b0aa;
-  --color8: #e3fef7;
-}
-
 /* .dark-theme {
   --logo-bg-color: #f7f7f7;
   --logo-text-color: #000;
@@ -51,7 +40,7 @@
   --logo-text-color: #e3fef7;
   --nav-bg-color: #e3fef7;
   --nav-text-color: #28343a;
-  --bg-color: #8ff5ca;
+  --bg-color: #cbf0e0;
   --text-color: #28343a;
   --footer-bg-color: #e3fef7;
   --side_menu-text-color: #e3fef7;
