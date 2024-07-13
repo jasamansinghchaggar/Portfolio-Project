@@ -37,16 +37,16 @@
 
 .light-theme {
   --logo-bg-color: #28343a;
-  --logo-text-color: #e3fef7;
-  --nav-bg-color: #e3fef7;
+  --logo-text-color: #f4eddf;
+  --nav-bg-color: #f4eddf;
   --nav-text-color: #28343a;
   --bg-color: #d8cfb8;
   --text-color: #28343a;
-  --footer-bg-color: #e3fef7;
-  --side_menu-text-color: #e3fef7;
+  --footer-bg-color: #f4eddf;
+  --side_menu-text-color: #f4eddf;
   --side_menu-bg-color: #28343a;
   --line: #77b0aa;
-  --review: #e3fef7;
+  --review: #f4eddf;
   --progress: #28343a;
 }
 
