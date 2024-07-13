@@ -4,7 +4,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--bg-color);
+    background-color: var(--footer-bg-color);
     color: var(--text-color);
     font-size: .8rem;
     font-weight: 500;

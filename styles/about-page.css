@@ -226,7 +226,7 @@
         }
 
         .review {
-            background-color: var(--line);
+            background-color: var(--review);
             border-radius: 10px;
             height: 100%;
             width: 60%;

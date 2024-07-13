@@ -11,11 +11,11 @@
     font-weight: 500;
     border-bottom: 1px solid var(--line);
     z-index: 1000;
-    background-color: var(--bg-color);
+    background-color: var(--nav-bg-color);
 
     .logo {
         height: 49px;
-        width: 3rem;
+        width: 3.25rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,7 +24,6 @@
         a {
             text-decoration: none;
             color: var(--logo-text-color);
-            font-size: 18px;
             font-weight: 700;
 
             &:hover {
@@ -51,10 +50,10 @@
 
                 a {
                     text-decoration: none;
-                    color: var(--text-color);
+                    color: var(--nav-text-color);
 
                     &:hover {
-                        text-decoration: underline var(--text-color) 1px;
+                        text-decoration: underline var(--nav-text-color) 1px;
                     }
                 }
             }
@@ -68,7 +67,7 @@
 
         .mode {
             background-color: inherit;
-            color: var(--text-color);
+            color: var(--nav-text-color);
             border: none;
             cursor: pointer;
             padding: 0.5rem;
@@ -82,7 +81,7 @@
             font-weight: 500;
 
             &:hover {
-                text-decoration: underline var(--text-color) 1px;
+                text-decoration: underline var(--nav-text-color) 1px;
             }
         }
     }
@@ -119,9 +118,12 @@
                     padding: 10px;
 
                     a {
-                        color: var(--text-color);
-                        transition: 0.5s;
+                        color: var(--side_menu-text-color);
                         text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline var(--side_menu-text-color) 1px;
+                        }
                     }
                 }
             }
