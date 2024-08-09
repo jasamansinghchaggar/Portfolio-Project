@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function applyStoredTheme() {
-        const storedTheme = localStorage.getItem('theme') || 'dark-theme';
+        const storedTheme = localStorage.getItem('theme');
         body.classList.add(storedTheme);
         updateIcon();
     }
